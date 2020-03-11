@@ -1,0 +1,647 @@
+*{
+    box-sizing: border-box;
+    }
+
+body{
+    margin: 0;
+    background: black;
+}
+
+.Allfontstyle{
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+}
+.Navbg{
+    background-color: black;
+    width: 100%;
+}
+.Navbar{
+    height: 48px;
+    display: flex;
+    justify-content: flex-start;
+    width: 1536px;
+    margin: 0px auto;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 190px;
+    height: 48px;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 auto;
+}
+.fourcolor{
+    height: 16px;
+    width: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.microsoft{
+    padding: 1px;
+    height: 50%;
+    width: 50%;
+    background-color: white;
+}
+.titlename{
+    height: 48px;
+    width: auto;
+    align-content: center;
+    flex: 0 0 auto;
+}
+.titlename h1{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 49px;
+}
+.navigation{
+    height: 48px;
+    flex: 1 1 auto;
+    padding: 0px 120px 0px 420px;
+}
+.navigation ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.navigation ul li{
+    width: auto;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 49px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+}
+.banner_area{
+    width: 100%;
+    background-color: black;
+    margin: 145px 0px 60px;
+}
+.banner{
+    display: flex;
+    width: 1536px;
+    margin: 0px auto;
+}
+.banner_L{
+    width: 410px;
+    flex: 0 0 auto;
+}
+.fontstyle{
+    font-size: 64px;
+    line-height: 80px;
+    color: rgb(79, 229, 255);
+    font-weight: 600;
+    margin: 0px 0px 0px -6px;
+}
+
+.banner_L_btm{
+    width: 100%;
+    max-width: 352px;
+    width: 100%;
+    margin: 100px 0px 30px;
+}
+
+.banner_L_btm p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px 0px 24px;
+}
+.banner_R{
+    text-align: center;
+    position: relative;
+    flex: 1 1 auto;
+}
+
+.banner_R_pic_R{
+    position: absolute;
+    top: -15px;
+    right: 180px;
+}
+.banner_R_pic_L{
+    position: absolute;
+    bottom: 155px;
+    left: 180px;
+}
+.systems_area{
+    width: 100%;
+    position: relative;
+}
+.systems_area::before{
+    content: "";
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: rgb(34, 128, 200);
+}
+.systems_area::after{
+    content: "";
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    background-color: rgb(95, 207, 99);
+}
+.systems{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1536px;
+    margin: 0px auto;
+}
+.sys{
+    width: 25%;
+    height: 384px;
+    z-index: 2;
+    position: relative;
+}
+.sys_hover{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute}
+
+.sys:hover .sys_hover{
+    display: block;
+}
+.sys_a_style{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.sys_1_bg{
+    background-color: rgb(37, 142, 222);
+}
+
+.sys_2_bg{
+    background-color: rgb(79, 229, 255);
+}
+.sys_3_bg{
+    background-color: rgb(207, 143, 255);
+}
+.sys_4_bg{
+    background-color: rgb(105, 229, 110);
+}
+
+.icon_area{
+    min-height: 96px;
+    width: 100%;
+    text-align: left;
+    flex: 1 1 auto;
+    padding: 26px;
+}
+.systems_content{
+    height: 100px;
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 0px 26px;
+}
+.systems_content h2{
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    /* letter-spacing: -0.03rem; */
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0px 0px 26px;
+}
+.systems_content p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0px;
+}
+.systems_action{
+    height: 48px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 0px 26px 10px;
+}
+.systems_action span{
+    font-size: 16px;
+    font-family: "Segoe UI Mono", mono;
+    letter-spacing: 0.01rem;
+    color: rgb(0, 0, 0);
+}
+.systems_action img{
+    margin: 0px 16px 0px 0px;
+}
+.natural{
+    width: 100%;
+    min-height: 768px;
+    background-image:url(https://www.microsoft.com/design/fluent/assets/images/msft-verge-fluent.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-position-x: 50%;
+    background-position-y: center; */
+}
+.natural_content{
+    width: 1536px;
+    margin: 0px auto;
+}
+.natural_content_top{
+    width: 100%;
+    padding: 10px 20px 0px;
+}
+.natural_content_top h2{
+    color: rgb(0, 0, 0);
+    font-size: 128px;
+    line-height: 150px;
+    font-weight: 600;
+}
+.natural_content_btm {
+    width: 100%;
+    max-width: 384px;
+    padding: 0px 16px 0px 24px;
+    margin: 60px 0px 0px;
+}
+.natural_content_btm p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.rgb25_area{
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+}
+.ball{
+    position: relative;
+    width: 1536px;
+    margin: 0px auto;
+}
+.ball_pic_R{
+    position: absolute;
+    top: -200px;
+    right: 130px;
+    pointer-events: none;
+    z-index: 4;
+    /* transform: translateY(20px);
+    opacity: 0;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
+}
+.ball_pic_L{
+    position: absolute;
+    top: 570px;
+    left: 190px;
+    pointer-events: none;
+    /* transform: translateY(400px);
+    transition: transform 600ms linear 0ms; */
+}
+.ball_pic_Mid{
+    padding: 60px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: scale(0.8);
+    padding: 100px 100px 50px;
+    transition: opacity 600ms linear 0ms, transform 600ms linear 0ms; */
+}
+.text{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 1536px;
+    margin: 0px auto;
+}
+.text_content{
+    width: 384px;
+    margin: 0px 0px 50px;
+    padding: 0px 16px;
+}
+.white_font_style{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px 0px 24px;
+}
+
+.mountain_area img{
+    width: 100%;
+    /* min-width: 2000px; */
+    position: relative;
+    align-self: center;
+}
+.cloud_area{
+    width: 100%;
+    min-height: 948px;
+    background-image:url(https://www.microsoft.com/design/fluent/assets/images/clouds.jpg);
+    background-size: coverc;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.cloud_content{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 1536px;
+    margin: 0px auto;
+}
+.diamond{
+    position: absolute;
+    top: -240px;
+    right: -260px;
+    width: 768px;
+    z-index: 1;
+}
+.diamond_top{
+    position: absolute;
+    top: -120px;
+    left: 2px;
+    z-index: 2;
+}
+.de_ h2{
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    font-size: 395px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.sign_ h2{
+    position: absolute;
+    top: 140px;
+    right: -30px;
+    font-size: 395px;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.mid_pic{
+    position: absolute;
+    top: 550px;
+    left: 370px;
+    
+}
+.engaging_area{
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    min-height: 820px;
+    position: relative;
+}
+.engaging_content{
+    width: 1536px;
+    position: relative;
+    margin: 0px auto;
+}
+.engaging_title{
+    width: 100%;
+    padding: 140px 40px 0px 8px;
+}
+.engaging_title h2{
+    color: rgb(0, 0, 0);
+    font-size: 128px;
+    line-height: 150px;
+    font-weight: 600;
+    margin: 0;
+}
+.engaging_text{
+    width: 100%;
+    margin: 60px 0px 0px;
+    max-width: 384px;
+    padding: 0px 16px;
+}
+.black_font_style{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0px;
+}
+.engaging_R_pic{
+    position: absolute;
+    top: 200px;
+    right: 0px;
+}
+.engaging_R_pic img{
+    max-width: 1000px;
+}
+.sky_area{
+    width: 100%;
+    min-height: 768px;
+    background-image:url(https://www.microsoft.com/design/fluent/assets/images/space.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.sky_content{
+    position: relative;
+    z-index: 2;
+    width: 1536px;
+    margin: 0px auto;
+}
+.pic1{
+    position: absolute;
+    top: -95px;
+    left: 340px;
+}
+.pic2{
+    position: absolute;
+    top: 185px;
+    left: 165px;
+    pointer-events: none;
+}
+.pic3{
+    position: absolute;
+    top: -125px;
+    left: 620px;
+    pointer-events: none;
+}
+.pic4{
+    position: absolute;
+    top: 530px;
+    right: 85px;
+    pointer-events: none;
+}
+.pic5{
+    position: absolute;
+    top: 370px;
+    right: 220px;
+    pointer-events: none;
+}
+.news_area{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin: 0px 0px 160px;
+}
+.news_content{
+    position: relative;
+    z-index: 2;
+    width: 1536px;
+    margin: 0px auto;
+    /* width: 100%; */
+    display: flex;
+    /* position: relative; */
+}
+.news{
+    width: 25%;
+    height: 384px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+   
+}
+.news_text_top{
+    width: 100%;
+    padding: 16px;
+    flex: 1 1 auto;
+    margin: 2px 0px 0px;
+}
+
+.news_text_btm{
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    flex: 0 0 auto;
+}
+.btm_icon{
+    width: 24px;
+    flex: 0 0 auto;
+    margin: 0px 16px 0px 0px;
+}
+.btm_text{
+    align-items: center;
+    flex: 1 1 auto;
+}
+.news p{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+.white{
+    color: white;
+}
+.news_bg1{
+    background-color: rgb(0, 0, 0);
+}
+.news_bg1:hover{
+    background-color: white;
+    color: black;
+    transition: 0.7s;
+}
+.news_bg2{
+    background-color: rgb(57, 57, 57);
+}
+.news_bg2:hover{
+    background-color: white;
+    color: black;
+    transition: 0.7s;
+}
+
+.news_bg3{
+    background-color: rgb(118, 118, 118);
+}
+.news_bg3:hover,.news_bg4:hover{
+    background-color: white;
+    transition: 0.7s;
+}
+.news_bg4{
+    background-color: rgb(204, 204, 204);
+}
+.last_area{
+    width: 100%;
+}
+.last_content{
+    width: 1536px;
+    margin: 0px auto;
+   
+}
+.padding200{
+    width: 100%;
+    padding-bottom: 200px;
+    display: flex;
+}
+.last_content_L{
+    width: 575px;
+    flex: 0 0 auto;
+}
+.last_content_L h2{
+    font-size: 32px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 0px 0px 0px 16px;
+}
+
+.last_content_R{
+    flex: 1 1 auto;
+    padding: 0px 330px 35px 208px;
+}
+.last_content_R p{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.last_content_R_btm{
+    width: 100%;
+    margin: 70px 0px 0px;
+}
+
+.last_content_R_btm img{
+    margin: 0px 16px 0px 0px;
+}
+.last_content_R_btm span{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: "Segoe UI Mono", mono;
+    
+}
+.footer_area{
+    width: 100%;
+    height: 48px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 1536px;
+    margin: 0px auto;
+}
+.ft_logo{
+    width: 190px;
+    height: 48px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 auto;
+}
+.ft_navigation{
+    height: 48px;
+    flex: 1 1 auto;
+    padding: 0px 100px 0px 0px;
+}
+.ft_social{
+    display: flex;
+    height: 48px;
+}
