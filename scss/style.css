@@ -1,0 +1,194 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.All {
+  width: 100%;
+  height: 100%;
+}
+
+.All .navinner {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.All .navinner .logo {
+  height: 60px;
+  width: 60px;
+}
+
+.All .navinner .menu ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.All .navinner .menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.All .swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.All .swiper-container .swioer-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.All .news .newsinner .card-deck {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.All .news .newsinner .card-deck .card {
+  width: 30%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: unset;
+      flex-basis: unset;
+  margin-top: 15px;
+}
+
+.All .aboutus {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/area1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.All .close {
+  display: none;
+}
+
+.All .mask {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  display: none;
+}
+
+.All .mask:hover {
+  display: block;
+}
+
+.All .activity {
+  padding: 0;
+  margin: 2em 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.All .activity li {
+  -webkit-transition: box-shadow 0.2s ease;
+  -webkit-transition: -webkit-box-shadow 0.2s ease;
+  transition: -webkit-box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 80%;
+  color: #ffb600;
+  display: inline-block;
+  font-size: .889em;
+  height: 5em;
+  margin: 0 1em 1em;
+  position: relative;
+  text-align: center;
+  text-transform: lowercase;
+  width: 5em;
+  line-height: 5em;
+}
+
+.All .activity li a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.All .activity li:hover {
+  -webkit-box-shadow: 0 0 0 7px #fff;
+          box-shadow: 0 0 0 7px #fff;
+}
+
+.All .activity li:hover:before {
+  -webkit-transform: scale(0.925);
+  transform: scale(0.925);
+  -webkit-box-shadow: 0 0 0 1px #fff;
+          box-shadow: 0 0 0 1px #fff;
+  opacity: .5;
+}
+
+.All .activity li:before {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+  bottom: 0;
+  -webkit-box-shadow: 0 0 0 1px #fff;
+          box-shadow: 0 0 0 1px #fff;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/*# sourceMappingURL=style.css.map */

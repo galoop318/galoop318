@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html, body {
+    position: relative;
+    height: 100%;
+  }
+
+a:hover {
+    text-decoration:none;
+}
+body{
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+
+}
+
+li{
+    list-style: none;
+}
+
+
+
+.All{
+    width: 100%;
+    height: 100%;
+
+       
+    .navinner{
+        margin: auto;
+        display: flex;
+        // justify-content: space-between;            // align-items: center;
+        .logo{
+            height: 60px;
+            width: 60px;
+        }
+        .menu{
+            // flex: 1;
+            // width: 819px;
+                
+            ul{
+                margin: 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                li{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    
+    //產品切換 
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        .swioer-wrapper{
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                height: calc((100% - 30px) / 2);
+            
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                
+            }
+        }
+    }
+
+    // 原料
+    .ingredients{
+        // height: 1080px;
+        // width: 100%;
+        // background-color:lightcoral;
+    }
+    
+    //最新消息
+    .news{
+        .newsinner{
+            .card-deck{
+                flex-wrap: wrap;
+                .card{
+                    width: 30%;
+                    flex-grow: 1;
+                    flex-basis:unset;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+
+    //關於我們
+    .aboutus{
+        height: 100vh;
+        width: 100%;
+        background-image:url(../img/area1.jpg) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+    }
+
+    .close{
+        display: none;
+    }
+    
+
+    // mask遮罩
+    .mask{
+        height: 100%;
+        width: 100%;
+        background-color:red;
+        display: none;
+        
+        &:hover{
+            display: block;
+        }
+    }
+    
+    
+    //  三個圓形的 
+    .activity {
+        padding: 0;
+        margin: 2em 0;
+        list-style: none;
+        display: flex;
+
+    
+        li {
+            -webkit-transition: box-shadow 0.2s ease;
+            -moz-transition: box-shadow 0.2s ease;
+            transition: box-shadow 0.2s ease;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 80%;
+            color: #ffb600;
+            display: inline-block;
+            font-size: .889em;
+            height: 5em;
+            margin: 0 1em 1em;
+            position: relative;
+            text-align: center;
+            text-transform: lowercase;
+            width: 5em;
+            line-height: 5em;
+            
+            a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom:0;
+            left: 0;
+            }
+            
+            &:hover {
+            box-shadow: 0 0 0 7px #fff; 
+            
+            &:before {
+                -webkit-transform: scale(0.925);
+                -moz-transform: scale(0.925);
+                -ms-transform: scale(0.925);
+                -o-transform: scale(0.925);
+                transform: scale(0.925);
+                box-shadow: 0 0 0 1px #fff;
+                opacity: .5; 
+            }
+            }
+            
+            &:before {
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            border-radius: 50%;
+            bottom: 0;
+            box-shadow: 0 0 0 1px #fff;
+            content: '';
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            
+            }
+        }
+    }
+}
