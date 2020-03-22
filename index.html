@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
     <link rel="stylesheet" href="./scss/style.css">
 
-    <link rel="stylesheet" href="hamburger.css">
+
 </head>
 
 <body>
@@ -20,40 +20,11 @@
 
 
         <div class="container ">
-            <!-- 先隱藏漢堡 with .close -->
-            <!-- 縮小的時候再 display block -->
-            <!-- <nav role="navigation">
-                <div id="menuToggle">
 
-                    <input type="checkbox" />
-
-
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-
-                    <ul id="menu">
-                        <a href="#">
-                            <li>Home</li>
-                        </a>
-                        <a href="#">
-                            <li>About</li>
-                        </a>
-                        <a href="#">
-                            <li>Info</li>
-                        </a>
-                        <a href="#">
-                            <li>Contact</li>
-                        </a>
-                        <a href="https://erikterwan.com/" target="_blank">
-                            <li>Show me more</li>
-                        </a>
-                    </ul>
-                </div>
-            </nav> -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light positionfixed">
-                <a class="navbar-brand" href="#">Navbar</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand logo" href="#">
+                    <img src="./img/ablogo.png" alt="">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -61,15 +32,15 @@
                 <!--  .justify-content-end 使右邊連結靠右 -->
                 <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Features</a>
-                        <a class="nav-item nav-link" href="#">Pricing</a>
-                        <a class="nav-item nav-link" href="#">Disabled</a>
+                        <a class="nav-item nav-link active" href="#">精選甜點</a>
+                        <a class="nav-item nav-link" href="#">最新消息</a>
+                        <a class="nav-item nav-link" href="#">品牌由來</a>
+                        <a class="nav-item nav-link" href="#">常見問題</a>
                     </div>
                 </div>
             </nav>
 
-            <nav class="navbar navbar-light ">
+            <!-- <nav class="navbar navbar-light ">
                 <a class="navbar-brand" href="#">
                     <img src="./img/ablogo_little.png" width="60" height="60" alt="">
                 </a>
@@ -88,7 +59,7 @@
                         <a class="nav-link" href="#">常見問題</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
         </div>
 
         <div class="main">
@@ -118,97 +89,213 @@
 
 
             <!-- 產品切換 -->
-            <div class="container">
-                <!-- 三個產品 圓形 -->
-                <ul class="nav nav-pills mb-3 activity" id="pills-tab" role="tablist"
-                    style="justify-content: center; margin-top: 30px; ">
-                    <li class="nav-item">
-                        <!-- nav link 是討厭的藍底方匡 刪掉或改名 -->
-                        <a class=" active " id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                            aria-controls="pills-home" aria-selected="true">塔派</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-                            aria-controls="pills-profile" aria-selected="false">蛋糕</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-                            aria-controls="pills-contact" aria-selected="false">飲品</a>
-                    </li>
-                </ul>
-
-                <div class="tab-content" id="pills-tabContent">
-                    <!-- 分頁內容 塔派 -->
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                        aria-labelledby="pills-home-tab">
-
-                        <!-- Swiper -->
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="mask"></div>
-                                    <a href="" data-toggle="modal" data-target="#newyearbox">
-                                        <img src="./img/AB商標(小).jpg" alt="" width="90%" class="rounded">
-                                    </a>
+            <div class="products">
+                <div class="container">
+                    <!-- 三個產品 圓形 -->
+                    <ul class="nav nav-pills mb-3 activity" id="pills-tab" role="tablist"
+                        style="justify-content: center; margin-top: 30px; ">
+                        <li class="nav-item">
+                            <!-- nav link 是討厭的藍底方匡 刪掉或改名 -->
+                            <a class=" active " id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                                aria-controls="pills-home" aria-selected="true">塔 派</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                                aria-controls="pills-profile" aria-selected="false">蛋 糕</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                                aria-controls="pills-contact" aria-selected="false">飲 品</a>
+                        </li>
+                    </ul>
+    
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- 分頁內容 塔派 -->
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+    
+                            <!-- Swiper -->
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/檸檬派.JPG" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>蔓越梅起司檸檬派 $100</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/百香果.jpg" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>百香果生巧克力派 ＄110</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/草莓香草.JPG" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>冬日草莓香草慕斯 ＄130</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/藍莓.jpg" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>藍莓寶石卡士達派 ＄130</p>
+                                        </div>
+    
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/覆盆.JPG" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>焦烤奶霜覆盆莓派 ＄140</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/玫瑰.JPG" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>玫瑰覆盆子穆斯塔 ＄130</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/黃檸檬.jpg" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>黃檸檬奶霜慕斯塔 ＄130</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/巧克力.JPG" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>經典草莓巧克力派 ＄150</p>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
-                                <div class="swiper-slide">Slide 2</div>
-                                <div class="swiper-slide">Slide 3</div>
-                                <div class="swiper-slide">
-                                    <img src="./img/sunny1-1.jpg" alt="" width="100%">
-
-                                </div>
-                                <div class="swiper-slide">Slide 5</div>
-                                <div class="swiper-slide">Slide 6</div>
-                                <div class="swiper-slide">Slide 7</div>
-                                <div class="swiper-slide">Slide 8</div>
-                                <div class="swiper-slide">Slide 9</div>
-                                <div class="swiper-slide">Slide 10</div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
                             </div>
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination"></div>
+    
                         </div>
-
-                    </div>
-                    <!-- 分頁內容 蛋糕 -->
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <!-- Swiper -->
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-
-                                    <a href="" data-toggle="modal" data-target="#exampleModalCenter2">
-                                        <img src="./img/AB商標(小).jpg" alt="" width="90%">
-                                    </a>
+                        <!-- 分頁內容 蛋糕 -->
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <!-- Swiper -->
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/費雪1.JPG" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>法式草莓費雪蛋糕</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/小南法.JPG" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>小南法雙橙生乳酪   $100</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/薰衣草.jpg" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>薰衣草蜂蜜重乳酪   $100</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/粉紅朵朵.JPG" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>粉紅朵朵</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/混血兒.JPG" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>混血兒巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" data-toggle="modal" data-target="#newyearbox">
+                                            <img src="./img/cake/紅莓起司.JPG" alt="" width="100%" style="border-radius:20px">
+                                        </a>
+                                        <div class="mask">
+                                            <p>森林紅莓起司蛋糕   $100</p>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
-                                <div class="swiper-slide">Slide 2</div>
-                                <div class="swiper-slide">Slide 3</div>
-                                <div class="swiper-slide">Slide 4</div>
-                                <div class="swiper-slide">Slide 5</div>
-                                <div class="swiper-slide">Slide 6</div>
-                                <div class="swiper-slide">Slide 7</div>
-                                <div class="swiper-slide">Slide 8</div>
-                                <div class="swiper-slide">Slide 9</div>
-                                <div class="swiper-slide">Slide 10</div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
                             </div>
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination"></div>
+    
                         </div>
-
+    
+                        <!-- 分頁內容 飲品 -->
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <img src="./img/cake/05- Drink Menu good order pages.jpg" alt="" width="100%">
+                        </div>
                     </div>
-
-                    <!-- 分頁內容 飲品 -->
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        ...</div>
+    
                 </div>
 
             </div>
+            
 
-            <!-- <div class="product">
-                <div class="productinner container"></div>
-            </div> -->
+           
             <div class="ingredients">
                 <div class="container">
-
+                    <div class="fruit">
+                        <div class="fruit_img">
+                            <img src="./img/樂比.jpg" alt="" width="100%">
+                        </div>
+                        <div class="fruit_text">
+                            <div class="fruit_text_title">
+                                <h4>RAVIFRUIT果泥</h4>
+                            </div>
+                            <br>
+                            <div class="fruit_text_content">
+                                <span>來自法國擁有獨立私人果園的Kerry集團，堅持選用最頂級的優質完熟水果，採用最先進的技術製程，均達90%水果含量，完美保留果實的營養、色澤與美味，絕無添加任何色素，或其他化學添加物。
+                                </span>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="cream">
+                        <div class="cream_text">
+                            <div class="cream_text_title">
+                                <h4>法國諾曼地奶油</h4>
+                            </div>
+                            <br>
+                            <div class="cream_text_content">
+                                <span>烘焙最重要的油，我們選擇了法國諾曼地ғʟéᴄʜᴀʀᴅ的發酵奶油。發酵製成的奶油風味較為濃郁，水分含量低、發煙點高，應用於烘焙製作上口感較好、不易起油耗味，在法國很常見，被認為是歐式風味的奶油。
+                                </span>
+                            </div>
+                        </div>
+                        <div class="crem_img">
+                            <img src="./img/法國諾曼地奶油.jpg" alt="" width="100%">
+                        </div>
+                    </div>
                 </div>
             </div>
 
