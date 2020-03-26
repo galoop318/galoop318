@@ -211,6 +211,7 @@ li {
 
 .All .news {
   background-color: #F9EEEC;
+  padding: 10% 0;
 }
 
 .All .news .newsinner .card-deck {
@@ -236,16 +237,55 @@ li {
 }
 
 .All .aboutus {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   background-image: url(../img/area1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.All .close {
-  display: none;
+.All .aboutus .aboutus_content {
+  width: 30%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.All .aboutus .aboutus_content .aboutus_content_line {
+  height: 85%;
+  width: 90%;
+  border: solid 1px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
 }
 
 .All .activity {

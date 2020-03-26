@@ -183,6 +183,7 @@ li{
     //最新消息
     .news{
         background-color: #F9EEEC;
+        padding: 10% 0;
         .newsinner{
             .card-deck{
                 flex-wrap: wrap;
@@ -203,18 +204,41 @@ li{
 
     //關於我們
     .aboutus{
-        height: 100vh;
+        
+        height: 80vh;
         width: 100%;
         background-image:url(../img/area1.jpg) ;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .aboutus_content{
+            width: 30%;
+            height: 25%;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius:20px;
+            position: relative;
+            .aboutus_content_line{
+                height: 85%;
+                width: 90%;
+                border: solid 1px;
+                border-radius:20px;
+                display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            }
+        }
     }
 
-    .close{
-        display: none;
-    }
+    // .close{
+    //     display: none;
+    // }
     
 
     
