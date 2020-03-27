@@ -255,8 +255,8 @@ li {
 }
 
 .All .aboutus .aboutus_content {
-  width: 30%;
-  height: 25%;
+  width: 60%;
+  height: 40%;
   background-color: rgba(0, 0, 0, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,11 +274,16 @@ li {
 .All .aboutus .aboutus_content .aboutus_content_line {
   height: 85%;
   width: 90%;
+  padding: 10%;
   border: solid 1px;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -286,6 +291,60 @@ li {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+}
+
+.All .map .mapinner {
+  margin: 10% auto;
+}
+
+.All .footer {
+  width: 100%;
+  height: 30%;
+  background-color: #FFFF99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.All .footer .footerinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.All .footer .footerinner ul {
+  padding: 0;
+}
+
+.All .footer .footerinner ul li {
+  margin: 10px;
+}
+
+.All .footer .footerinner ul li img {
+  height: 20px;
+  width: 20px;
+}
+
+.All .footer .footerinner .footerinner_R {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .All .activity {
