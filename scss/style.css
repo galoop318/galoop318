@@ -197,8 +197,25 @@ li {
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .All .ingredients .container .fruit .fruit_text {
+    font-size: 10px;
+  }
+}
+
+.All .ingredients .container .fruit .fruit_text .fruit_text_title p {
+  margin: 0;
+  font-size: 24px;
+}
+
 .All .ingredients .container .fruit .fruit_text .fruit_text_content {
   width: 70%;
+}
+
+@media (max-width: 768px) {
+  .All .ingredients .container .fruit .fruit_text .fruit_text_content {
+    width: 80%;
+  }
 }
 
 .All .ingredients .container .cream {
@@ -224,8 +241,19 @@ li {
           justify-content: center;
 }
 
+.All .ingredients .container .cream .cream_text .cream_text_title p {
+  margin: 0;
+  font-size: 24px;
+}
+
 .All .ingredients .container .cream .cream_text .cream_text_content {
   width: 70%;
+}
+
+@media (max-width: 768px) {
+  .All .ingredients .container .cream .cream_text .cream_text_content span {
+    font-size: 10px;
+  }
 }
 
 .All .ingredients .container .cream .crem_img {
@@ -276,6 +304,12 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 768px) {
+  .All .aboutus {
+    background-attachment: unset;
+  }
 }
 
 .All .aboutus .aboutus_content {

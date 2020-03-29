@@ -168,8 +168,20 @@ li{
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
+                    @media (max-width:768px){
+                        font-size: 10px;
+                    }
+                    .fruit_text_title{
+                        p{
+                            margin: 0;
+                            font-size: 24px;
+                        }
+                    }
                     .fruit_text_content{
                         width: 70%;
+                        @media (max-width:768px){
+                            width: 80%;
+                        }
                     }
                 }
             }
@@ -181,8 +193,21 @@ li{
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
+                    
+                    .cream_text_title{
+                        p{
+                            margin: 0;
+                            font-size: 24px;
+                           
+                        }
+                    }
                     .cream_text_content{
                         width: 70%;
+                        span{
+                            @media (max-width:768px){
+                                font-size: 10px;
+                            }
+                        }
                     }
 
                 }
@@ -228,6 +253,9 @@ li{
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width:768px) {
+            background-attachment: unset;
+        }
         .aboutus_content{
             width: 60%;
             height: 40%;
